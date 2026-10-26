@@ -98,9 +98,11 @@ import type {
     GetIntegrationFunction,
     GetIntegrationFunctions,
     GetIntegrationTemplates,
+    GetProviderTemplateCode,
     GetProviderTemplates,
     GetPublicIntegrationFunction,
     GetPublicIntegrationFunctions,
+    GetPublicProviderTemplateCode,
     GetPublicProviderTemplates,
     PatchConnectionFunction,
     PatchFunction,
@@ -253,6 +255,7 @@ export type PublicApiEndpoints =
     | PostToolCall
     | DeletePublicIntegrationFunction
     | GetPublicProviderTemplates
+    | GetPublicProviderTemplateCode
     | PostPublicRotateWebhookSigningKey
     | AllPublicProxy
     | PostPublicEnvironment
@@ -310,6 +313,7 @@ export type PrivateApiEndpoints =
     | DeleteIntegrationFunction
     | GetIntegrationTemplates
     | GetProviderTemplates
+    | GetProviderTemplateCode
     | DeleteIntegration
     | PatchIntegration
     | GetIntegration
